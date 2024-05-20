@@ -92,7 +92,7 @@ header nav ul li a{
 }    
 
 .work{
-    background-color: red;
+    
     margin-top: 60px;
     margin-left: 200px;
 }
@@ -101,4 +101,11 @@ header nav ul li a{
     font-size: 60px;
     color: #315975;
     float:left;
+    margin-right: 120px;
+}
+.work img{
+    background-color: red;
+    display: block;
+    max-width: 77%;
+    border:5px solid #315975;
 }
