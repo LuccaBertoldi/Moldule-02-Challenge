@@ -33,7 +33,7 @@ main header nav{
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-left:55%;
+    padding-left:49%;
 }
 
 
@@ -70,7 +70,7 @@ main header nav ul li a{
     font-size: 40px;
     padding: 15px;
     top: 55%;
-    left: 75%;
+    left: 76%;
     background-color:#6ab5eb ;
     border-radius: 5px;
     color: rgb(67, 67, 67);
@@ -85,13 +85,12 @@ main header nav ul li a{
     font-size: 60px;
     color: #315975;
     float:left;
+    margin-right: 120px;
 }
  
 .about-me p{
     display: flex;
-    padding-left: 100px;
-    padding-right:100px;
-    font-size: 20px;
+    
     color:#6ab5eb;
     line-height: 25px;
     margin-top: 20px;
@@ -107,7 +106,7 @@ main header nav ul li a{
     font-size: 60px;
     color: #315975;
     float:left;
-    margin-right: 120px;
+    margin-right: 135px;
 }
 
 .work div{
@@ -120,15 +119,24 @@ main header nav ul li a{
     display: flex;
     flex: 0 1 0;
     position: relative;
+    
 }
 
 .card img {
     display: flex;
     max-width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     border: 3px solid #6ab5eb;
+    margin:3px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
     
+.card:hover img {
+    opacity: 0.6;
+  }
+
 .card figcaption{
     padding: 5px;
     background-color:#6ab5eb ;
@@ -138,6 +146,7 @@ main header nav ul li a{
     flex-wrap: wrap;
     align-items: center;
     top: 200px;
+    left: 5px;
 }
 
 .card figcaption h3{
@@ -151,20 +160,156 @@ main header nav ul li a{
 }
 
 #card1{
-    max-width: 1200px;
+    max-width: 1005px;
 }
 
 footer{
     margin-top: 60px;
+    margin-bottom: 30px;
     margin-left: 200px;
     display: flex;
-    flex-wrap: wrap;
+  
 }
 
 footer h2{
-    font-size: 60px;
+    font-size: 50px;
     color: #315975;
     float:left;
-    margin-right: 120px;
+    margin-right: 80px;
 }
 
+
+footer  nav ul{
+    display: flex;
+}
+
+footer  nav ul li{
+    padding: 10px;
+}
+
+footer nav ul li a{
+    text-decoration: underline 2px;
+    color: #6ab5eb;
+    font-size: 21px;
+    
+}
+
+@media screen and (max-width: 1506px) {
+    .card img{
+        max-width: 499px;
+    }
+
+@media screen and (max-width: 992px) {
+    main header h1{
+        display: flex;
+        font-size: 30px;
+        color: rgb(67, 67, 67);
+        background-color:#6ab5eb;
+    }
+
+    main header nav{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-left: 40%;
+    }
+
+    main header nav ul li a{
+        text-decoration: underline 3px;
+        color: #6ab5eb;
+        font-size: 15px;
+        
+    }
+
+    .image figcaption{
+        font-size: 18px;
+    }
+
+    .about-me{
+            margin-top: 40px;
+            margin-left: 20px;
+    }
+
+    .about-me h2{
+        font-size: 40px;
+        color: #315975;
+        float:left;
+        margin-right: 50px;
+    }
+
+    .about-me p{
+        font-size: 13px;
+        line-height: 15px;
+    }    
+        
+    .work div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .work{
+            margin-top: 60px;
+            margin-left: 20px;
+            display: flex;
+    }
+    .work h2{
+        font-size: 40px;
+        color: #315975;
+        float:left;
+        margin-right: 50px;
+    }
+
+    .card {
+        display: flex;
+        flex: 0 1 0;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .card img{
+        max-width: 450px;
+    }
+
+    #card1{
+        max-width: 450px;
+    }
+
+    .card figcaption h3{
+        font-size: 18px;
+    }
+    
+    .card figcaption p{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-left: 20px;
+      
+    }
+    
+    footer h2{
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    
+    
+    footer  nav ul{
+        display: flex;
+    }
+    
+    footer  nav ul li{
+        padding: 3px;
+    }
+    
+    footer nav ul li a{
+        text-decoration: underline 2px;
+        color: #6ab5eb;
+        font-size:15px;
+        
+    }
+}
+
+    
+  
